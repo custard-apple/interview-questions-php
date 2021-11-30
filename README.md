@@ -6,7 +6,6 @@
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: 
 
 Hypertext Pre-Processor designed by Rasmus Lerdorf in June 8, 1995
 
@@ -20,7 +19,6 @@ Hypertext Pre-Processor designed by Rasmus Lerdorf in June 8, 1995
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: 
 
 8.1.0 / 25 November 2021
 
