@@ -17,4 +17,28 @@ Now, since the version 2.8, this feature is in the main branch of WordPress and 
 
 ---
 
+###### Q. How to install WP-CLI on Windows?
 
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+  WP-CLI is the official command line tool for interacting with and managing your WordPress sites.
+  <ol>
+    <li>Download wp-cli.phar</li>
+    <li>Create a folder c:\wp-cli</li>
+    <li>Copy and Paste downloaded wp-cli.phar file in c:\wp-cli</li>
+    <li>Create a named wp.bat in c:\wp-cli folder</li>
+    <li>Paste the following code in wp.bat file and save wp.bat file in c:\wp-cli</li>
+        @ECHO OFF
+        php "c:/wp-cli/wp-cli.phar" %*
+    <li>Set c:\wp-cli to your system PATH</li>
+    From Windows Menu, open Environment Variables and select Path and click EDIT and ADD new environment variable and hit ok, ok, and ok.
+    <li>Relaunch CMD, Go to path C:>wp-cli & Type wp help</li>
+
+  </ol>
+  Then, You will get all the options available through WP command and in that you will find <b>wp cli</b> option as well.
+</p>
+</details>
+
+---
