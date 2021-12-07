@@ -1,5 +1,5 @@
-
-###### 1. What are mu-plugins?
+# Wordpress Interview Questions
+###### Q. What are mu-plugins?
 
 
 <details><summary><b>Answer</b></summary>
