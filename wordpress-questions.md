@@ -39,6 +39,21 @@ Now, since the version 2.8, this feature is in the main branch of WordPress and 
   </ol>
   Then, You will get all the options available through WP command and in that you will find <b>wp cli</b> option as well.
 </p>
+
+2
+
+WP-CLI is just the ticket. I've used if for so many things, I've lost count!
+
+wp plugin list --status=active
+If you want, you can run these commands on your local machine with aliases...
+
+You would then use the @site function
+
+wp @all plugin list --status=active
+or
+
+wp @multisite list --status=active
+wp @blog list --status=active
 </details>
 
 ---
