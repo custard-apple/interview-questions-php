@@ -57,3 +57,23 @@ wp @blog list --status=active
 </details>
 
 ---
+
+###### Q. What is WAF or Azure Web Application Firewall on Azure Application Gateway?
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+Azure Web Application Firewall (WAF) on Azure Application Gateway provides centralized protection of your web applications from common exploits and vulnerabilities.
+  <ul>
+    <li>Protect your web applications from web vulnerabilities and attacks without modification to back-end code</li>
+    <li>Protect multiple web applications at the same time. An instance of Application Gateway can host up to 40 websites that are protected by a web application firewall</li>
+    <li>Create custom WAF policies for different sites behind the same WAF</li>
+    <li>Protect your web applications from malicious bots with the IP Reputation ruleset</li>
+  </ul>
+  Origin : https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview
+           https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/create-waf-policy-ag
+</p>
+</details>
+
+---
