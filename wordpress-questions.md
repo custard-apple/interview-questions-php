@@ -71,7 +71,7 @@ Azure Web Application Firewall (WAF) on Azure Application Gateway provides centr
     <li>Create custom WAF policies for different sites behind the same WAF</li>
     <li>Protect your web applications from malicious bots with the IP Reputation ruleset</li>
   </ul>
-  Origin : https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview
+  Origin : https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview</br>
            https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/create-waf-policy-ag
 </p>
 </details>
