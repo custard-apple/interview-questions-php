@@ -77,3 +77,68 @@ Azure Web Application Firewall (WAF) on Azure Application Gateway provides centr
 </details>
 
 ---
+
+###### Q. How to set multiple virtual host?
+
+
+
+###### Q. How to set multiple virtual host for wordpress multisite?
+
+<b>If you are created new projects</b>
+Download two wordpress e.g. WordPress 5.9 Beta 2
+Give proper name to them e.g. beta
+Create new db with same name as beta in phpMyadmin or in any other DB admin
+
+<b>If there are existing projects, one with name baap and the new project with name beta</b>
+
+
+<b>Below steps are common for both the cases</b>
+Open C:\xampp\apache\conf\extra  and add virtual host entry in file named httpd-vhosts.conf
+```
+<VirtualHost *:80>
+
+    ServerAdmin postmaster@beta.local
+
+    DocumentRoot "C:\xampp\htdocs\beta"
+
+    ServerName beta.local
+
+    ServerAlias www.beta.local
+
+    ErrorLog "logs/beta.local-error.log"
+
+    CustomLog "logs/beta.local-access.log" combined
+
+</VirtualHost>
+```
+Open C:\Windows\System32\drivers\etc and add host entry in file named hosts
+127.0.0.1   beta.local
+
+Save both the files
+Restart the xampp<br>
+If xampp shows error Error: Apache shutdown unexpectedly.
+<details><summary><b>Solution</b></summary>
+<p>
+
+In XAMPP Control Panel V3.2.1, click on "NetStat" button on top right. Make sure port 80 is not used by any other program. Then click on "Shell" Right below it. Issue this command in the shell prompt;
+
+```Apache_Start.bat```
+
+or type "ap" then tab the TAB key two times which will similarly generate the above command. You will actually see the exact error why Apache failed. It will be mostly likely virtual host configuration issue or may be something else. It will display the line number on which the error is occurring. Just fix that error. Note that in RootDocument a trailing \ can be a source of error as well. Remove any trailing "".
+
+</p>
+</details>
+
+Go to browser and type http://beta.local
+If the site is new then do wp configuration step by step
+If the site is old then<br>
+Go into your MySQL database (thru phpmyadmin or whatever) and look for the following fields
+
+In the wp_options table, change value for entry
+```
+siteurl
+home
+To http://beta.local instead of localhost or any previous url```
+
+This will update all your links in wordpress.
+---
